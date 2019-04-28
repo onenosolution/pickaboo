@@ -7,10 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <link href="css/cart_page.css" rel="stylesheet" type="text/css">
-	<link rel="icon" href="img/Pickaboo_favlogo123_1.png" type="image/x-icon">
+    <link rel="icon" href="img/Pickaboo_favlogo123_1.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
 </head>
@@ -27,8 +27,8 @@
 
             </div>
             <div class="col-md-6">
-                <button class="button custom-checkout-button btn-proceed-checkout btn-checkout" type="button" title="Proceed to Checkout"
-                    onclick="cart_page.html">
+                <button class="button custom-checkout-button btn-proceed-checkout btn-checkout" type="button"
+                    title="Proceed to Checkout" onclick="cart_page.html">
                     Proceed to Checkout
                 </button>
             </div>
@@ -36,171 +36,188 @@
         <!--cart table-->
         <div class="row">
             <div class="col-md-12">
+                <div class="table-responsive-sm">
+                    <table class="table cart-table" id="cart-table-id">
+                        <colgroup>
+                            <col style="width: 11%">
+                            </col>
+                            <col>
+                            </col>
+                            <col style="width: 7%">
+                            </col>
+                            <col style="width:11%">
+                            </col>
+                            <col style="width: 7%">
+                            </col>
+                            <col style="width:11%">
+                            </col>
+                        </colgroup>
+                        <thead class="cart-table-header">
+                            <tr>
+                                <th style="padding:15px 15px 15px 22px;">Product Image</th>
+                                <th style="padding:15px;">Product Name</th>
+                                <th></th>
+                                <th style="padding:15px;"> Unit Price</th>
+                                <th style="padding:15px;">Qty</th>
+                                <th style="padding:15px;">Subtotal</th>
+
+                            </tr>
 
 
-                <table class="table cart-table" id="cart-table-id">
-                    <colgroup>
-                        <col style="width: 11%">
-                        </col>
-                        <col>
-                        </col>
-                        <col style="width: 7%">
-                        </col>
-                        <col style="width:11%">
-                        </col>
-                        <col style="width: 7%">
-                        </col>
-                        <col style="width:11%">
-                        </col>
-                    </colgroup>
-                    <thead class="cart-table-header">
-                        <tr>
-                            <th style="padding:15px 15px 15px 22px;">Product Image</th>
-                            <th style="padding:15px;">Product Name</th>
-                            <th></th>
-                            <th style="padding:15px;"> Unit Price</th>
-                            <th style="padding:15px;">Qty</th>
-                            <th style="padding:15px;">Subtotal</th>
+                        </thead>
 
-                        </tr>
+                        <tbody class="cart-table-body">
+                            <!--First Row-->
+                            <tr>
+                                <!--Product Image-->
+                                <td style="padding:30px 15px 30px 20px;">
+                                    <a href="#"><img class="product-img cart-table-body-data"
+                                            src="img/huawei-nova-3i-blue_1.jpg" alt="Huawei Nova 3i" width="90"
+                                            height="80" title="Huawei Nova 3i" id="Huawei-Nova-3i"
+                                            onClick="MidNightBlack()" /></a>
 
+                                </td>
+                                <!--Product Name-->
+                                <td>
+                                    <a href="#" style="text-decoration: none;">
+                                        <p class="cart-table-body-data-title" id="product_hw_p30_lite"> HUAWEI P30 Lite
+                                        </p>
+                                    </a>
+                                    <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span
+                                            class="cart-table-body-data-color"
+                                            style="color: #606060; background-color:rgb(224, 219, 224); padding:7px;">Color
+                                            : Midnight Black</span></p>
+                                    <div style="padding-bottom:5px;"><button
+                                            class="cart-table-body-remove-button btnDelete">Remove</button></div>
 
-                    </thead>
-
-                    <tbody class="cart-table-body">
-                        <!--First Row-->
-                        <tr>
-                            <!--Product Image-->
-                            <td style="padding:30px 15px 30px 20px;">
-                                <a href="#"><img class="product-img cart-table-body-data" src="img/huawei-nova-3i-blue_1.jpg"
-                                        alt="Huawei Nova 3i" width="90" height="80" title="Huawei Nova 3i" id="Huawei-Nova-3i"
-                                        onClick="MidNightBlack()" /></a>
-
-                            </td>
-                            <!--Product Name-->
-                            <td>
-                                <a href="#" style="text-decoration: none;">
-                                    <p class="cart-table-body-data-title" id="product_hw_p30_lite"> HUAWEI P30 Lite</p>
-                                </a>
-                                <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span class="cart-table-body-data-color"
-                                        style="color: #606060; background-color:rgb(224, 219, 224); padding:7px;">Color
-                                        : Midnight Black</span></p>
-                                <div style="padding-bottom:5px;"><button class="cart-table-body-remove-button btnDelete">Remove</button></div>
-
-                            </td>
-                            <!--Edit-->
-                            <td class="cart-table-body-data-product-edit">
-                                <div><button class="cart-table-body-edit-button">Edit</button></div>
+                                </td>
+                                <!--Edit-->
+                                <td class="cart-table-body-data-product-edit">
+                                    <div><button class="cart-table-body-edit-button">Edit</button></div>
 
 
-                            </td>
-                            <!--Unit Price-->
-                            <td>
-                                <p id="unit_price" class="cart-table-body-price">৳25,599.00</p>
-                            </td>
-                            <!--Quantity-->
-                            <td>
-                                <form class="cart-table-body-data-product-quantity" action="javascript:edit('product_hw_p30_lite')">
-                                    <input type="text" value=1 class="cart-table-body-data-product-quantity-input" id="product_hw_p30_lite_qty">
-                                </form>
-                            </td>
-                            <!--Total-->
-                            <td>
-                                <p id="product_hw_p30_lite_price" class="cart-table-body-price">৳25,599.00</p>
-                            </td>
+                                </td>
+                                <!--Unit Price-->
+                                <td>
+                                    <p id="unit_price" class="cart-table-body-price">৳25,599.00</p>
+                                </td>
+                                <!--Quantity-->
+                                <td>
+                                    <form class="cart-table-body-data-product-quantity"
+                                        action="javascript:edit('product_hw_p30_lite')">
+                                        <input type="text" value=1 class="cart-table-body-data-product-quantity-input"
+                                            id="product_hw_p30_lite_qty">
+                                    </form>
+                                </td>
+                                <!--Total-->
+                                <td>
+                                    <p id="product_hw_p30_lite_price" class="cart-table-body-price">৳25,599.00</p>
+                                </td>
 
-                        </tr>
+                            </tr>
 
-                        <!--Second Row-->
-                        <tr>
-                            <!--Product Image-->
-                            <td style="padding:30px 15px 30px 20px;">
-                                <a href="#"><img class="product-img cart-table-body-data" src="img/huawei-nova-3i-blue_1.jpg"
-                                        alt="Huawei Nova 3i" width="90" height="80" title="Huawei Nova 3i" id="Huawei-Nova-3i"
-                                        onClick="MidNightBlack()" /></a>
+                            <!--Second Row-->
+                            <tr>
+                                <!--Product Image-->
+                                <td style="padding:30px 15px 30px 20px;">
+                                    <a href="#"><img class="product-img cart-table-body-data"
+                                            src="img/huawei-nova-3i-blue_1.jpg" alt="Huawei Nova 3i" width="90"
+                                            height="80" title="Huawei Nova 3i" id="Huawei-Nova-3i"
+                                            onClick="MidNightBlack()" /></a>
 
-                            </td>
-                            <!--Product Name-->
-                            <td>
-                                <a href="#" style="text-decoration: none;">
-                                    <p class="cart-table-body-data-title" id="product_hw_p30_lite"> HUAWEI P30 Lite</p>
-                                </a>
-                                <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span class="cart-table-body-data-color"
-                                        style="color: #606060; background-color:rgb(224, 219, 224); padding:7px;">Color
-                                        : Midnight Black</span></p>
-                                <div style="padding-bottom:5px;"><button class="cart-table-body-remove-button btnDelete">Remove</button></div>
+                                </td>
+                                <!--Product Name-->
+                                <td>
+                                    <a href="#" style="text-decoration: none;">
+                                        <p class="cart-table-body-data-title" id="product_hw_p30_lite"> HUAWEI P30 Lite
+                                        </p>
+                                    </a>
+                                    <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span
+                                            class="cart-table-body-data-color"
+                                            style="color: #606060; background-color:rgb(224, 219, 224); padding:7px;">Color
+                                            : Midnight Black</span></p>
+                                    <div style="padding-bottom:5px;"><button
+                                            class="cart-table-body-remove-button btnDelete">Remove</button></div>
 
-                            </td>
-                            <!--Edit-->
-                            <td class="cart-table-body-data-product-edit">
-                                <div><button class="cart-table-body-edit-button">Edit</button></div>
-
-
-                            </td>
-                            <!--Unit Price-->
-                            <td>
-                                <p id="unit_price" class="cart-table-body-price">৳25,599.00</p>
-                            </td>
-                            <!--Quantity-->
-                            <td>
-                                <form class="cart-table-body-data-product-quantity" action="javascript:edit('product_hw_p30_lite')">
-                                    <input type="text" value=1 class="cart-table-body-data-product-quantity-input" id="product_hw_p30_lite_qty">
-                                </form>
-                            </td>
-                            <!--Total-->
-                            <td>
-                                <p id="product_hw_p30_lite_price" class="cart-table-body-price">৳25,599.00</p>
-                            </td>
-
-                        </tr>
-
-                        <!--Third Row-->
-                        <tr>
-                            <!--Product Image-->
-                            <td style="padding:30px 15px 30px 20px;">
-                                <a href="#"><img class="product-img cart-table-body-data" src="img/huawei-nova-3i-blue_1.jpg"
-                                        alt="Huawei Nova 3i" width="90" height="80" title="Huawei Nova 3i" id="Huawei-Nova-3i"
-                                        onClick="MidNightBlack()" /></a>
-
-                            </td>
-                            <!--Product Name-->
-                            <td>
-                                <a href="#" style="text-decoration: none;">
-                                    <p class="cart-table-body-data-title" id="product_hw_p30_lite"> HUAWEI P30 Lite</p>
-                                </a>
-                                <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span class="cart-table-body-data-color"
-                                        style="color: #606060; background-color:rgb(224, 219, 224); padding:7px;">Color
-                                        : Midnight Black</span></p>
-                                <div style="padding-bottom:5px;"><button class="cart-table-body-remove-button btnDelete">Remove</button></div>
-
-                            </td>
-                            <!--Edit-->
-                            <td class="cart-table-body-data-product-edit">
-                                <div><button class="cart-table-body-edit-button">Edit</button></div>
+                                </td>
+                                <!--Edit-->
+                                <td class="cart-table-body-data-product-edit">
+                                    <div><button class="cart-table-body-edit-button">Edit</button></div>
 
 
-                            </td>
-                            <!--Unit Price-->
-                            <td>
-                                <p id="unit_price" class="cart-table-body-price">৳25,599.00</p>
-                            </td>
-                            <!--Quantity-->
-                            <td>
-                                <form class="cart-table-body-data-product-quantity" action="javascript:edit('product_hw_p30_lite')">
-                                    <input type="text" value=1 class="cart-table-body-data-product-quantity-input" id="product_hw_p30_lite_qty">
-                                </form>
-                            </td>
-                            <!--Total-->
-                            <td>
-                                <p id="product_hw_p30_lite_price" class="cart-table-body-price">৳25,599.00</p>
-                            </td>
+                                </td>
+                                <!--Unit Price-->
+                                <td>
+                                    <p id="unit_price" class="cart-table-body-price">৳25,599.00</p>
+                                </td>
+                                <!--Quantity-->
+                                <td>
+                                    <form class="cart-table-body-data-product-quantity"
+                                        action="javascript:edit('product_hw_p30_lite')">
+                                        <input type="text" value=1 class="cart-table-body-data-product-quantity-input"
+                                            id="product_hw_p30_lite_qty">
+                                    </form>
+                                </td>
+                                <!--Total-->
+                                <td>
+                                    <p id="product_hw_p30_lite_price" class="cart-table-body-price">৳25,599.00</p>
+                                </td>
 
-                        </tr>
+                            </tr>
 
-                    </tbody>
+                            <!--Third Row-->
+                            <tr>
+                                <!--Product Image-->
+                                <td style="padding:30px 15px 30px 20px;">
+                                    <a href="#"><img class="product-img cart-table-body-data"
+                                            src="img/huawei-nova-3i-blue_1.jpg" alt="Huawei Nova 3i" width="90"
+                                            height="80" title="Huawei Nova 3i" id="Huawei-Nova-3i"
+                                            onClick="MidNightBlack()" /></a>
 
-                </table>
+                                </td>
+                                <!--Product Name-->
+                                <td>
+                                    <a href="#" style="text-decoration: none;">
+                                        <p class="cart-table-body-data-title" id="product_hw_p30_lite"> HUAWEI P30 Lite
+                                        </p>
+                                    </a>
+                                    <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span
+                                            class="cart-table-body-data-color"
+                                            style="color: #606060; background-color:rgb(224, 219, 224); padding:7px;">Color
+                                            : Midnight Black</span></p>
+                                    <div style="padding-bottom:5px;"><button
+                                            class="cart-table-body-remove-button btnDelete">Remove</button></div>
 
+                                </td>
+                                <!--Edit-->
+                                <td class="cart-table-body-data-product-edit">
+                                    <div><button class="cart-table-body-edit-button">Edit</button></div>
+
+
+                                </td>
+                                <!--Unit Price-->
+                                <td>
+                                    <p id="unit_price" class="cart-table-body-price">৳25,599.00</p>
+                                </td>
+                                <!--Quantity-->
+                                <td>
+                                    <form class="cart-table-body-data-product-quantity"
+                                        action="javascript:edit('product_hw_p30_lite')">
+                                        <input type="text" value=1 class="cart-table-body-data-product-quantity-input"
+                                            id="product_hw_p30_lite_qty">
+                                    </form>
+                                </td>
+                                <!--Total-->
+                                <td>
+                                    <p id="product_hw_p30_lite_price" class="cart-table-body-price">৳25,599.00</p>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+                </div>
 
             </div>
             <div class="row">
@@ -212,7 +229,8 @@
                         <button class="btn btn-lg-cont-updt" title="Update Shopping Cart">UPDATE SHOPPING CART</button>
                     </div>
                     <div class="col-md-4">
-                        <button class="btn btn-lg-clear-shopping btnDelete" id="clear-shopping-cart" title="Clear Shopping Cart">CLEAR SHOPPING
+                        <button class="btn btn-lg-clear-shopping btnDelete" id="clear-shopping-cart"
+                            title="Clear Shopping Cart">CLEAR SHOPPING
                             CART</button>
                     </div>
                 </div>
@@ -225,27 +243,26 @@
                         //  var price=document.getElementById("unit_price").value;
                         //  document.getElementById("product_hw_p30_lite_qty").innerHTML = qty;
 
-                        document.getElementById("product_hw_p30_lite_price").innerHTML = ("৳") + (qty * 25599.00).toFixed(2);
-                    }
-                    else if (product == "product_hw_p35_lite") {
+                        document.getElementById("product_hw_p30_lite_price").innerHTML = ("৳") + (qty * 25599.00)
+                            .toFixed(2);
+                    } else if (product == "product_hw_p35_lite") {
                         var qty = document.getElementById("product_hw_p35_lite_qty").value;
                         //  var price=document.getElementById("unit_price").value;
                         //document.getElementById("product_hw_p35_lite_qty").innerHTML = qty;
 
-                        document.getElementById("product_hw_p35_lite_price").innerHTML = ("৳") + (qty * 25599.00).toFixed(2);
-                    }
-                    else if (product == "product_hw_p40_lite") {
+                        document.getElementById("product_hw_p35_lite_price").innerHTML = ("৳") + (qty * 25599.00)
+                            .toFixed(2);
+                    } else if (product == "product_hw_p40_lite") {
                         var qty = document.getElementById("product_hw_p40_lite_qty").value;
                         //  var price=document.getElementById("unit_price").value;
                         //  document.getElementById("product_hw_p40_lite_qty").innerHTML = qty;
 
-                        document.getElementById("product_hw_p40_lite_price").innerHTML = ("৳") + (qty * 25599.00).toFixed(2);
+                        document.getElementById("product_hw_p40_lite_price").innerHTML = ("৳") + (qty * 25599.00)
+                            .toFixed(2);
                     }
+                    
 
                 }
-
-
-
             </script>
             <!--For removing a row jquery-->
             <script>
@@ -264,9 +281,6 @@
                     });
 
                 });
-
-  
-
             </script>
 
             <!----
