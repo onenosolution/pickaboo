@@ -113,3 +113,47 @@
     border-radius: 0px;
 
   }
+
+
+  .product-main{
+   
+    border-top: 5px solid blueviolet;
+    border-bottom: 1px solid lightgray;
+    border-left: 1px solid lightgray;
+    border-right: 1px solid lightgray;
+    }
+  
+    .subCategory ul li a{
+      border-top: 1px solid lightgray;
+    }
+    .product-grid {
+      border-left: 1px solid lightgray;
+      border-bottom: 1px solid lightgray;
+    }
+    .product-grid-bottom{
+      border-bottom: none;
+  }
+
+  .topbtn{
+    background-color: purple;
+    border: 0px;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 18px;
+    margin-left: 15px;
+  }
+
+  .topcart{
+    padding: 5px;
+    padding-left: 32px;
+    background-color: red;
+    border: 0px;
+    width: 90px;
+    height: 30px;
+    border-radius: 20px;
+    color: white;
+    margin-top: 18px;
+    margin-left: 15px;
+  }
