@@ -20,34 +20,32 @@
 <body>
 
     <div class="container">
-        <div>
-            <img src="images/logo-pickaboo.png" alt="">
-        </div>
-        <div class="row justify-content-center">
-            <div class="col-12 col-md-10 col-lg-8">
-                <form class="card card-sm">
-                    <div class="card-body row no-gutters align-items-center">
-                        <div class="col-auto">
-                            <i class="fas fa-search h4 text-body"></i>
-                        </div>
-                        <!--end of col-->
-                        <div class="col">
-                            <input class="form-control form-control-lg form-control-borderless" type="search"
-                                placeholder="Search">
-                        </div>
-                        <!--end of col-->
-                        <div class="">
-                            <button class="btn btn-lg btn-success" type="submit">Search</button>
-                        </div>
-                        <!--end of col-->
-                    </div>
-                </form>
+        <div class="header">
+            <div class="logo">
+                <img src="images/logo-pickaboo.png" alt="">
             </div>
-            <!--end of col-->
+
+
+            <div class="topsearch">
+                <div class="input-group"> <input type="text" class="form-control" placeholder="Search">
+                    <div class="input-group-btn"> <button class="btn btn-primary" type="submit"><i
+                                class="glyphicon glyphicon-search"></i></button> </div>
+                </div>
+            </div>
+
+            <div class="headerlogo">
+                <button class="topbtn">Cart</button>
+            </div>
+
         </div>
     </div>
 
-    <div class="container-fluid">
+
+
+
+
+    <!--Navbar Start-->
+    
         <nav class="navbar" <div class="container-fluid">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle" data-toggle="collapse"
@@ -62,32 +60,39 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="#">Computer</a></li>
-                    <li><a href="#">Mobile</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Electronics</a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">MOBILE</a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">One more separated link</a></li>
+
                         </ul>
                     </li>
-                </ul>
-
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Link</a></li>
                     <li class="dropdown">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">COMPUTER</a>
                         <ul class="dropdown-menu">
                             <li><a href="#">Action</a></li>
                             <li><a href="#">Another action</a></li>
                             <li><a href="#">Something else here</a></li>
-                            <li class="divider"></li>
-                            <li><a href="#">Separated link</a></li>
+
+                        </ul>
+                    </li>
+
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">ELECTRONICS</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">LIFESTYLE</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+
                         </ul>
                     </li>
                 </ul>

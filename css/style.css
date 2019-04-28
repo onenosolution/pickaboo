@@ -88,3 +88,28 @@
   .nav a:hover{
     color: #2899d1;
   }
+
+  .header{
+    display: flex;
+  }
+
+  .header .topsearch{
+    flex: 2;
+    margin-top: 15px;
+  }
+  
+  .product-main{
+    border: 1px solid lightgray;
+  }
+
+  .subCategory ul li a{
+    border-top: 1px solid lightgray;
+  }
+  .product-grid {
+    border-left: 1px solid lightgray;
+    border-bottom: 1px solid lightgray;
+  }
+  .navbar{
+    border-radius: 0px;
+
+  }
