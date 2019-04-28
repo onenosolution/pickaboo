@@ -81,3 +81,10 @@
       background-color: #2899d1;
       color: white;
   }
+  .nav a{
+    color: white;
+  }
+
+  .nav a:hover{
+    color: #2899d1;
+  }
