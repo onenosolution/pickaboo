@@ -1,78 +1,83 @@
 .my_textarea{
     resize: none;
-}
-
-.popular_bg{
+  }
+  
+  .popular_bg{
     background: url(../images/popular_bg.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat:  no-repeat;
     background-size: cover;
-}
-/*owl carousel*/
-#owl-demo .item{
+  }
+  /*owl carousel*/
+  #owl-demo .item{
     margin: 3px;
-}
-#owl-demo .item img{
+  }
+  #owl-demo .item img{
     display: block;
     width: 100%;
     height: auto;
-}
-/*owl carousel*/
-
-.my_panel_body_padding_bottom{
+  }
+  /*owl carousel*/
+  
+  .my_panel_body_padding_bottom{
     padding-bottom: 0px;
-}
-
-.my_margin_bottom{
+  }
+  
+  .my_margin_bottom{
     margin-bottom: 0px;
-}
-
-.my_logo_navbar{
+  }
+  
+  .my_logo_navbar{
     padding: 2px;
-}
-
-.nav_search_margin_width{
+  }
+  
+  .nav_search_margin_width{
     margin-left: 25%;
     width: 450px;
-}
-
-.my_img_responsive{
+  }
+  
+  .my_img_responsive{
     width: 100%;
     height: 100%;
-}
-
-.my_add_image{
+  }
+  
+  .my_add_image{
     height: 390px !important;
-
-}
-.my_panel_margin{
+  
+  }
+  .my_panel_margin{
     margin-bottom: 4px;
-}
-
-@media screen and (min-width: 992px) and (max-width: 1199px) {
+  }
+  
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
     .nav_search_margin_width {
         margin-left: 20%;
         width: 350px;
     }
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
     .nav_search_margin_width {
         margin-left: 5%;
         width: 280px;
     }
-}
-@media screen and (max-width: 767px) {
+  }
+  @media screen and (max-width: 767px) {
     .nav_search_margin_width {
         margin: 0 auto;
         width:80%;
     }
-}
-
-
-.header_top_height{ height: 30px;}
-.header_bottom_height{ height: 200px;}
-.menu_height{ height: 50px; }
-.content_height{ height: 1000px; }
-.big_footer_height{ height: 250px; }
-.footer_height{ height: 30px; }
+  }
+  
+  
+  .header_top_height{ height: 30px;}
+  .header_bottom_height{ height: 200px;}
+  .menu_height{ height: 50px; }
+  .content_height{ height: 1000px; }
+  .big_footer_height{ height: 250px; }
+  .footer_height{ height: 30px; }
+  
+  .navbar{
+      background-color: #2899d1;
+      color: white;
+  }
