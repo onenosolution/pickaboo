@@ -1,0 +1,86 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 21, 2019, 4:51:56 PM
+    Author     : Foysal Ahmmed
+*/
+.product-main{
+  height:498px;
+  border-top: 5px solid blueviolet;
+  border-bottom: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+.category-product{
+    width: 70%;
+    float: left;
+}
+/*For category..............................*/ 
+.category-tab{
+    width: 32%;
+    float: left;
+    /*border-right:1px solid black;*/
+    margin: 0px;
+}
+.category-header{
+    text-align: center;
+    padding: 20px;
+    color: blueviolet;
+}
+/*Sub Category.........................*/
+.subCategory{
+    height:395px;
+    overflow:scroll;
+    overflow-x:hidden;    
+}
+.subCategory ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width:100%;
+}
+.subCategory ul li a{
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #8c8c8c;
+  border-top:1px solid black;
+}
+.subCategory ul li a:hover{
+    background-color:  blueviolet;
+    color: white;
+}
+/*Product grid.............................*/
+.category-product-grid{
+    width: 68%;
+    float: left;
+}
+.product-grid{
+    width:22.6%;
+    height:246px;
+    border-left:1px solid black;
+    border-bottom:1px solid black;
+    float:left;
+}
+/*.product-grid:nth-child(3){
+    border-right:1px solid black; 
+}*/
+.product-grid-bottom{
+    border-bottom: none;
+}
+.product-grid-link{
+    align:center;
+    color: #8c8c8c;
+    text-decoration:none;
+}
+.product-grid-link:hover{
+    color:red;
+    text-decoration:none;
+}
+.category-add{
+    width: 30%;
+    float: left;
+}

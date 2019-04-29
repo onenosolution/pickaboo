@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            body {
+               /*background-image:url(image/bg.png)*/
+             
+            }
+           
+
+            input[type=text], select, textarea {
+                width: 100%;
+                padding: 12px;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+                margin-top: 6px;
+                margin-bottom: 16px;
+                resize: vertical;
+            }
+
+            input[type=submit] {
+                background-color: #4CAF50;
+                color: white;
+                padding: 12px 20px;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            .container {
+                border-radius: 5px;
+                /*background-color: #f2f2f2;*/
+                padding: 20px;
+            }
+            .form-right-padding{
+                padding-right: 10px;
+            }
+            .for-font{
+                font:500 14px/1.55 Lato,Helvetica Neue, Helvetica, Arial, sans-serif;
+            }
+            input:focus{
+                border-color:red;
+            }
+            textArea:focus{
+                border-color: red;
+            }
+        </style>
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+
+        <link href="css/boot_class_01.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+       
+    </head>
+    <body style="background-color: #c4e3f3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 form-right-padding">
+                    <h3 style="color:#0198d1">Contact Us</h2>
+                    <h4 style="color:#0198d1">Contact Information</h3>
+
+                    <form action="/action_page.php">
+                        <label style="color: dimgrey; font-weight: normal; ">Name<font color="red"><sup>*</sup></font></label>
+                        <input type="text" id="fname" name="firstname" onclick="borderColor() " >
+
+                        <label style="color: dimgrey; font-weight: normal; ">Email<font color="red"><sup>*</sup></font></label>
+                        <input type="text" id="lname" name="lastname" >
+                        <label style="color: dimgrey; font-weight: normal; ">Telephone</label>
+                        <input type="text" id="lname" name="lastname" >
+
+
+                        <label style="color: dimgrey; font-weight: normal; ">Comment<font color="red"><sup>*</sup></font></label>
+                        <textarea id="subject" name="subject" style="height:200px"></textarea>
+                        </br>
+                        <button class="btn btn-sm btn-primary">Submit</button>
+                    </form>
+                    </br>
+                    <p> <font color="red"><sup>*Required Fields</sup></font></p>
+
+                </div>
+                <div class="col-md-6">
+                    </br>                     
+                    </br>
+                    </br>
+                    </br>
+
+
+                    <h4 class="tmargin30" style="color:#0198d1">Help Centre</h4><h6 >Assistance at your finger tips</h6>
+                    <h6>&nbsp;</h6> <h6><span class="fa fa-map-marker secondary2" style="color:red;">&nbsp &nbsp;
+                        </span>Address:  House 10,Road 12,Block F,Niketan,Gulshan 1,Dhaka 1212</h6>
+                    <h6 class="em-phone">
+                        <span class="fa fa-phone secondary2" style="color:red;">&nbsp &nbsp;</span>Phone: +8809666745745 
+                        (9:00 AM to 10:00 PM)</h6><h6 class="em-email">
+                        <span class="fa fa-envelope secondary2" style="color:red;">&nbsp &nbsp;</span>Email:
+                        <span class="secondary2" style="color:red;">support@pickaboo.com</span></h6> 
+                    <img src='image/bg.png'>
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    </body>
+</html>
