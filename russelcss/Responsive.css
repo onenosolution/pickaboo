@@ -1,0 +1,36 @@
+
+
+
+/* Large desktop :990px */
+@media (min-width: 990px) and (max-width: 1200px) {
+	
+
+}
+/* tablet layout: 768px */
+@media (min-width: 768px) and (max-width: 990px) {
+	
+
+}
+
+/* small mobile*/
+@media (min-width: 480px) and (max-width: 768px) {
+	
+
+}
+/* Large phones and down: 480px */
+@media  only screen and (min-width: 320px) (max-width: 480px) {
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

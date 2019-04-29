@@ -7,15 +7,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css">
     <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+        crossorigin="anonymous">
     <link href="css/cart_page.css" rel="stylesheet" type="text/css">
-    <link rel="icon" href="img/Pickaboo_favlogo123_1.png" type="image/x-icon">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="icon" href="img/Pickaboo_favlogo123_1.png" type="image/x-icon">
+
+
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/boot_class_01.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="css/middleCategoryProduct.css">
+    <link rel="stylesheet" href="css/style.css">
 
 </head>
 
 <body>
+
+
+
+        <div class="container">
+                <div class="header">
+                    <div class="logo">
+                        <img src="images/logo-pickaboo.png" alt="">
+                    </div>
+        
+        
+                    <div class="topsearch">
+                        <div class="input-group"> <input type="text" class="form-control" placeholder="Search">
+                            <div class="input-group-btn"> <button class="btn btn-primary" type="submit"><i
+                                        class="glyphicon glyphicon-search"></i></button> </div>
+                        </div>
+                    </div>
+        
+                    <div class="headerlogo">
+                        <div class="topbtn"><a href="signin.html"> Sign In</a></div>
+                        
+                    </div>
+        
+                    <div class="headerlogo">
+                        <div class="topcart"><a href="cart_page.html"> Cart </a></div>
+                    </div>
+                    
+        
+                </div>
+            </div>
+        
+        
+        
+        
+        
+            <!--Navbar Start-->
+            
+                <nav class="navbar" <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse"
+                            data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+        
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">MOBILE</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Android</a></li>
+                                    <li><a href="#">iPhone</a></li>
+                                    <li><a href="#">Basic Phone</a></li>
+        
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">COMPUTER</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Laptop</a></li>
+                                    <li><a href="#">Desktop</a></li>
+                                    <li><a href="#">Hybrid</a></li>
+                                </ul>
+                            </li>
+        
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">ELECTRONICS</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Television</a></li>
+                                    <li><a href="#">Home Applience</a></li>
+        
+                                </ul>
+                            </li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">LIFESTYLE</a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">Clothing</a></li>
+                                    <li><a href="#">Home Decor</a></li>
+        
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+            </nav>
+            </div>
+
+
+
+
     <!--Main container for cart page-->
     <div class="container" style="margin-top: 30px;">
         <!--Title-->
@@ -27,8 +129,8 @@
 
             </div>
             <div class="col-md-6">
-                <button class="button custom-checkout-button btn-proceed-checkout btn-checkout" type="button"
-                    title="Proceed to Checkout" onclick="cart_page.html">
+                <button class="button custom-checkout-button btn-proceed-checkout btn-checkout" type="button" title="Proceed to Checkout"
+                    onclick="cart_page.html">
                     Proceed to Checkout
                 </button>
             </div>
@@ -36,6 +138,7 @@
         <!--cart table-->
         <div class="row">
             <div class="col-md-12">
+
                 <div class="table-responsive-sm">
                     <table class="table cart-table" id="cart-table-id">
                         <colgroup>
@@ -71,29 +174,25 @@
                             <tr>
                                 <!--Product Image-->
                                 <td style="padding:30px 15px 30px 20px;">
-                                    <a href="#"><img class="product-img cart-table-body-data"
-                                            src="img/huawei-nova-3i-blue_1.jpg" alt="Huawei Nova 3i" width="90"
-                                            height="80" title="Huawei Nova 3i" id="Huawei-Nova-3i"
+                                    <a href="#"><img class="product-img cart-table-body-data" src="img/huawei-nova-3i-blue_1.jpg"
+                                            alt="Huawei Nova 3i" width="90" height="80" title="Huawei Nova 3i" id="Huawei-Nova-3i"
                                             onClick="MidNightBlack()" /></a>
 
                                 </td>
                                 <!--Product Name-->
                                 <td>
                                     <a href="#" style="text-decoration: none;">
-                                        <p class="cart-table-body-data-title" id="product_hw_p30_lite"> HUAWEI P30 Lite
-                                        </p>
+                                        <p class="cart-table-body-data-title" id="product_hw_p30_lite"> HUAWEI P30 Lite</p>
                                     </a>
-                                    <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span
-                                            class="cart-table-body-data-color"
+                                    <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span class="cart-table-body-data-color"
                                             style="color: #606060; background-color:rgb(224, 219, 224); padding:7px;">Color
                                             : Midnight Black</span></p>
-                                    <div style="padding-bottom:5px;"><button
-                                            class="cart-table-body-remove-button btnDelete">Remove</button></div>
+                                    <div style="padding-bottom:5px;"><button class="cart-table-body-remove-button btnDelete1">Remove</button></div>
 
                                 </td>
                                 <!--Edit-->
                                 <td class="cart-table-body-data-product-edit">
-                                    <div><button class="cart-table-body-edit-button">Edit</button></div>
+                                    <div><a href="product_hw_p30_lite - Final.html"><button class="cart-table-body-edit-button">Edit</button></a></div>
 
 
                                 </td>
@@ -103,9 +202,8 @@
                                 </td>
                                 <!--Quantity-->
                                 <td>
-                                    <form class="cart-table-body-data-product-quantity"
-                                        action="javascript:edit('product_hw_p30_lite')">
-                                        <input type="text" value=1 class="cart-table-body-data-product-quantity-input"
+                                    <form class="cart-table-body-data-product-quantity" action="javascript:edit('product_hw_p30_lite')">
+                                        <input type="text" autocomplete="off" value=1 class="cart-table-body-data-product-quantity-input"
                                             id="product_hw_p30_lite_qty">
                                     </form>
                                 </td>
@@ -120,29 +218,25 @@
                             <tr>
                                 <!--Product Image-->
                                 <td style="padding:30px 15px 30px 20px;">
-                                    <a href="#"><img class="product-img cart-table-body-data"
-                                            src="img/huawei-nova-3i-blue_1.jpg" alt="Huawei Nova 3i" width="90"
-                                            height="80" title="Huawei Nova 3i" id="Huawei-Nova-3i"
+                                    <a href="#"><img class="product-img cart-table-body-data" src="img/huawei-nova-3i-blue_1.jpg"
+                                            alt="Huawei Nova 3i" width="90" height="80" title="Huawei Nova 3i" id="Huawei-Nova-3i"
                                             onClick="MidNightBlack()" /></a>
 
                                 </td>
                                 <!--Product Name-->
                                 <td>
                                     <a href="#" style="text-decoration: none;">
-                                        <p class="cart-table-body-data-title" id="product_hw_p30_lite"> HUAWEI P30 Lite
-                                        </p>
+                                        <p class="cart-table-body-data-title" id="product_hw_p35_lite"> HUAWEI P30 Lite</p>
                                     </a>
-                                    <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span
-                                            class="cart-table-body-data-color"
+                                    <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span class="cart-table-body-data-color"
                                             style="color: #606060; background-color:rgb(224, 219, 224); padding:7px;">Color
                                             : Midnight Black</span></p>
-                                    <div style="padding-bottom:5px;"><button
-                                            class="cart-table-body-remove-button btnDelete">Remove</button></div>
+                                    <div style="padding-bottom:5px;"><button class="cart-table-body-remove-button btnDelete2">Remove</button></div>
 
                                 </td>
                                 <!--Edit-->
                                 <td class="cart-table-body-data-product-edit">
-                                    <div><button class="cart-table-body-edit-button">Edit</button></div>
+                                    <div><a href="product_hw_p30_lite - Final.html"><button class="cart-table-body-edit-button">Edit</button></a></div>
 
 
                                 </td>
@@ -152,15 +246,14 @@
                                 </td>
                                 <!--Quantity-->
                                 <td>
-                                    <form class="cart-table-body-data-product-quantity"
-                                        action="javascript:edit('product_hw_p30_lite')">
-                                        <input type="text" value=1 class="cart-table-body-data-product-quantity-input"
-                                            id="product_hw_p30_lite_qty">
+                                    <form class="cart-table-body-data-product-quantity" action="javascript:edit('product_hw_p35_lite')">
+                                        <input type="text" autocomplete="off" value=1 class="cart-table-body-data-product-quantity-input"
+                                            id="product_hw_p35_lite_qty">
                                     </form>
                                 </td>
                                 <!--Total-->
                                 <td>
-                                    <p id="product_hw_p30_lite_price" class="cart-table-body-price">৳25,599.00</p>
+                                    <p id="product_hw_p35_lite_price" class="cart-table-body-price">৳25,599.00</p>
                                 </td>
 
                             </tr>
@@ -169,29 +262,25 @@
                             <tr>
                                 <!--Product Image-->
                                 <td style="padding:30px 15px 30px 20px;">
-                                    <a href="#"><img class="product-img cart-table-body-data"
-                                            src="img/huawei-nova-3i-blue_1.jpg" alt="Huawei Nova 3i" width="90"
-                                            height="80" title="Huawei Nova 3i" id="Huawei-Nova-3i"
+                                    <a href="#"><img class="product-img cart-table-body-data" src="img/huawei-nova-3i-blue_1.jpg"
+                                            alt="Huawei Nova 3i" width="90" height="80" title="Huawei Nova 3i" id="Huawei-Nova-3i"
                                             onClick="MidNightBlack()" /></a>
 
                                 </td>
                                 <!--Product Name-->
                                 <td>
                                     <a href="#" style="text-decoration: none;">
-                                        <p class="cart-table-body-data-title" id="product_hw_p30_lite"> HUAWEI P30 Lite
-                                        </p>
+                                        <p class="cart-table-body-data-title" id="product_hw_p40_lite"> HUAWEI P30 Lite</p>
                                     </a>
-                                    <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span
-                                            class="cart-table-body-data-color"
+                                    <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span class="cart-table-body-data-color"
                                             style="color: #606060; background-color:rgb(224, 219, 224); padding:7px;">Color
                                             : Midnight Black</span></p>
-                                    <div style="padding-bottom:5px;"><button
-                                            class="cart-table-body-remove-button btnDelete">Remove</button></div>
+                                    <div style="padding-bottom:5px;"><button class="cart-table-body-remove-button btnDelete3">Remove</button></div>
 
                                 </td>
                                 <!--Edit-->
                                 <td class="cart-table-body-data-product-edit">
-                                    <div><button class="cart-table-body-edit-button">Edit</button></div>
+                                    <div><a href="product_hw_p30_lite - Final.html"><button class="cart-table-body-edit-button">Edit</button></a></div>
 
 
                                 </td>
@@ -201,75 +290,135 @@
                                 </td>
                                 <!--Quantity-->
                                 <td>
-                                    <form class="cart-table-body-data-product-quantity"
-                                        action="javascript:edit('product_hw_p30_lite')">
-                                        <input type="text" value=1 class="cart-table-body-data-product-quantity-input"
-                                            id="product_hw_p30_lite_qty">
+                                    <form class="cart-table-body-data-product-quantity" action="javascript:edit('product_hw_p40_lite')">
+                                        <input type="text" autocomplete="off" value=1 class="cart-table-body-data-product-quantity-input"
+                                            id="product_hw_p40_lite_qty">
                                     </form>
                                 </td>
                                 <!--Total-->
                                 <td>
-                                    <p id="product_hw_p30_lite_price" class="cart-table-body-price">৳25,599.00</p>
+                                    <p id="product_hw_p40_lite_price" class="cart-table-body-price">৳25,599.00</p>
                                 </td>
-
+                                cart
                             </tr>
 
                         </tbody>
 
                     </table>
-                </div>
 
+                </div>
+            </div>
+            <!--Total Price-->
+            <div class="row">
+                <div class="col-md-11">
+                    <p id="total_price_p" style="float:right; font-weight: bold;font-size: 18px; color:white; padding:5px;background-color:#6bb954;">TOTAL
+                        <span id="total_price" style="background-color: cornsilk; color:dodgerblue;border:1px solid #6bb954; clear: both;">25599.00</span>
+                    </p>
+                </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <div class="col-md-4">
-                        <button class="btn btn-lg-cont-updt" title="Continue Shopping">CONTINUE SHOPPING</button>
+                        <a href="index.html"><button class="btn btn-lg-cont-updt" title="Continue Shopping">CONTINUE
+                                SHOPPING</button> </a>
                     </div>
                     <div class="col-md-4">
-                        <button class="btn btn-lg-cont-updt" title="Update Shopping Cart">UPDATE SHOPPING CART</button>
+                        <a href="product_hw_p30_lite - Final.html"><button class="btn btn-lg-cont-updt" title="Update Shopping Cart">UPDATE
+                                SHOPPING CART</button></a>
                     </div>
                     <div class="col-md-4">
-                        <button class="btn btn-lg-clear-shopping btnDelete" id="clear-shopping-cart"
-                            title="Clear Shopping Cart">CLEAR SHOPPING
+                        <button class="btn btn-lg-clear-shopping btnDelete" id="clear-shopping-cart" title="Clear Shopping Cart">CLEAR
+                            SHOPPING
                             CART</button>
                     </div>
                 </div>
             </div>
 
             <script>
+                var total = 0, product1Qty = 1, product2Qty = 1, product3Qty = 1;
+                product1Qty = document.getElementById("product_hw_p30_lite_qty").value;
+                product2Qty = document.getElementById("product_hw_p35_lite_qty").value;
+                product3Qty = document.getElementById("product_hw_p40_lite_qty").value;
+                                   
                 function edit(product) {
+
                     if (product == "product_hw_p30_lite") {
-                        var qty = document.getElementById("product_hw_p30_lite_qty").value;
+                        product1Qty = document.getElementById("product_hw_p30_lite_qty").value;
                         //  var price=document.getElementById("unit_price").value;
                         //  document.getElementById("product_hw_p30_lite_qty").innerHTML = qty;
+                        // total=total + (product1Qty*25599.00).toFixed(2);
 
-                        document.getElementById("product_hw_p30_lite_price").innerHTML = ("৳") + (qty * 25599.00)
-                            .toFixed(2);
-                    } else if (product == "product_hw_p35_lite") {
-                        var qty = document.getElementById("product_hw_p35_lite_qty").value;
+                        document.getElementById("product_hw_p30_lite_price").innerHTML = ("৳") + (product1Qty * 25599.00).toFixed(2);
+                        total = (product1Qty * 25599.00 + product2Qty * 25599.00 + product3Qty * 25599.00).toFixed(2);
+
+                        document.getElementById("total_price").innerHTML = ("৳") + total + (" /=");
+
+                    }
+                    else if (product == "product_hw_p35_lite") {
+                       product2Qty = document.getElementById("product_hw_p35_lite_qty").value;
                         //  var price=document.getElementById("unit_price").value;
                         //document.getElementById("product_hw_p35_lite_qty").innerHTML = qty;
+                        //total=total + (product2Qty*25599.00).toFixed(2);
 
-                        document.getElementById("product_hw_p35_lite_price").innerHTML = ("৳") + (qty * 25599.00)
-                            .toFixed(2);
-                    } else if (product == "product_hw_p40_lite") {
-                        var qty = document.getElementById("product_hw_p40_lite_qty").value;
+                        document.getElementById("product_hw_p35_lite_price").innerHTML = ("৳") + (product2Qty * 25599.00).toFixed(2);
+                        total = (product1Qty * 25599.00 + product2Qty * 25599.00 + product3Qty * 25599.00).toFixed(2);
+
+                        document.getElementById("total_price").innerHTML = ("৳") + total + (" /=");
+
+                    }
+                    else if (product == "product_hw_p40_lite") {
+                        product3Qty = document.getElementById("product_hw_p40_lite_qty").value;
                         //  var price=document.getElementById("unit_price").value;
                         //  document.getElementById("product_hw_p40_lite_qty").innerHTML = qty;
+                        //total=total + (product3Qty*25599.00).toFixed(2);
 
-                        document.getElementById("product_hw_p40_lite_price").innerHTML = ("৳") + (qty * 25599.00)
-                            .toFixed(2);
+                        document.getElementById("product_hw_p40_lite_price").innerHTML = ("৳") + (product3Qty * 25599.00).toFixed(2);
+                        total = (product1Qty * 25599.00 + product2Qty * 25599.00 + product3Qty * 25599.00).toFixed(2);
+
+                        document.getElementById("total_price").innerHTML = ("৳") + total + (" /=");
                     }
-                    
+
+
 
                 }
+                total = (product1Qty * 25599.00 + product2Qty * 25599.00 + product3Qty * 25599.00).toFixed(2);
+
+                document.getElementById("total_price").innerHTML = ("৳") + total + (" /=");
+
+
+
             </script>
             <!--For removing a row jquery-->
             <script>
                 $(document).ready(function () {
 
-                    $("#cart-table-id").on('click', '.btnDelete', function () {
+                    $("#cart-table-id").on('click', '.btnDelete1', function () {
+                        var product1Qtyremove = document.getElementById("product_hw_p30_lite_qty").value;
+              
                         $(this).closest('tr').remove();
+                        updateTotals('btndlt1',product1Qtyremove);
+
+                    });
+
+                });
+                $(document).ready(function () {
+
+                    $("#cart-table-id").on('click', '.btnDelete2', function () {
+                        var product2Qtyremove = document.getElementById("product_hw_p35_lite_qty").value;
+              
+                        $(this).closest('tr').remove();
+                        updateTotals('btndlt2',product2Qtyremove);
+
+                    });
+
+                });
+                $(document).ready(function () {
+
+                    $("#cart-table-id").on('click', '.btnDelete3', function () {
+                        var product3Qtyremove = document.getElementById("product_hw_p40_lite_qty").value;
+                        $(this).closest('tr').remove();
+                        updateTotals('btndlt3',product3Qtyremove);
+
                     });
 
                 });
@@ -278,9 +427,36 @@
 
                     $("#clear-shopping-cart").click(function () {
                         $("#cart-table-id").remove();
+                        $("#total_price_p").remove();
+
+
                     });
 
                 });
+
+                function updateTotals(btn,productQtyremove) {
+                
+                    var $totalGrandCell = $('#total_price');
+                    if(btn='btndlt1' && total>0)
+                    {
+                
+                      total= total-(productQtyremove*25599.00);
+                    }
+                    else if(btn='btndlt2'&& total>0){
+                
+                        total= total-(productQtyremove*25599.00);
+                    }
+                    else if(btn='btndlt3' && total>0){
+                
+                        total= total-(productQtyremove*25599.00);
+                    }
+                   
+                    $totalGrandCell.text(total);
+
+                }
+
+
+
             </script>
 
             <!----
@@ -309,7 +485,7 @@
 
     </div>
 
-
+<br><br><br>
     <!-- JavaScript Link  -->
     <script src="js/jquery-3.1.1.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
