@@ -84,7 +84,7 @@
                                     <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span class="cart-table-body-data-color"
                                             style="color: #606060; background-color:rgb(224, 219, 224); padding:7px;">Color
                                             : Midnight Black</span></p>
-                                    <div style="padding-bottom:5px;"><button class="cart-table-body-remove-button btnDelete">Remove</button></div>
+                                    <div style="padding-bottom:5px;"><button class="cart-table-body-remove-button btnDelete1">Remove</button></div>
 
                                 </td>
                                 <!--Edit-->
@@ -100,7 +100,7 @@
                                 <!--Quantity-->
                                 <td>
                                     <form class="cart-table-body-data-product-quantity" action="javascript:edit('product_hw_p30_lite')">
-                                        <input type="text" value=1 class="cart-table-body-data-product-quantity-input"
+                                        <input type="text" autocomplete="off" value=1 class="cart-table-body-data-product-quantity-input"
                                             id="product_hw_p30_lite_qty">
                                     </form>
                                 </td>
@@ -128,7 +128,7 @@
                                     <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span class="cart-table-body-data-color"
                                             style="color: #606060; background-color:rgb(224, 219, 224); padding:7px;">Color
                                             : Midnight Black</span></p>
-                                    <div style="padding-bottom:5px;"><button class="cart-table-body-remove-button btnDelete">Remove</button></div>
+                                    <div style="padding-bottom:5px;"><button class="cart-table-body-remove-button btnDelete2">Remove</button></div>
 
                                 </td>
                                 <!--Edit-->
@@ -144,7 +144,7 @@
                                 <!--Quantity-->
                                 <td>
                                     <form class="cart-table-body-data-product-quantity" action="javascript:edit('product_hw_p35_lite')">
-                                        <input type="text" value=1 class="cart-table-body-data-product-quantity-input"
+                                        <input type="text" autocomplete="off" value=1 class="cart-table-body-data-product-quantity-input"
                                             id="product_hw_p35_lite_qty">
                                     </form>
                                 </td>
@@ -172,7 +172,7 @@
                                     <p style="padding-left:7px; padding-top:5px; padding-bottom:5px; "><span class="cart-table-body-data-color"
                                             style="color: #606060; background-color:rgb(224, 219, 224); padding:7px;">Color
                                             : Midnight Black</span></p>
-                                    <div style="padding-bottom:5px;"><button class="cart-table-body-remove-button btnDelete">Remove</button></div>
+                                    <div style="padding-bottom:5px;"><button class="cart-table-body-remove-button btnDelete3">Remove</button></div>
 
                                 </td>
                                 <!--Edit-->
@@ -188,7 +188,7 @@
                                 <!--Quantity-->
                                 <td>
                                     <form class="cart-table-body-data-product-quantity" action="javascript:edit('product_hw_p40_lite')">
-                                        <input type="text" value=1 class="cart-table-body-data-product-quantity-input"
+                                        <input type="text" autocomplete="off" value=1 class="cart-table-body-data-product-quantity-input"
                                             id="product_hw_p40_lite_qty">
                                     </form>
                                 </td>
@@ -216,10 +216,12 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="col-md-4">
-                       <a href="index.html"><button class="btn btn-lg-cont-updt" title="Continue Shopping">CONTINUE SHOPPING</button> </a> 
+                        <a href="index.html"><button class="btn btn-lg-cont-updt" title="Continue Shopping">CONTINUE
+                                SHOPPING</button> </a>
                     </div>
                     <div class="col-md-4">
-                        <a href="product_hw_p30_lite - Final.html"><button class="btn btn-lg-cont-updt" title="Update Shopping Cart">UPDATE SHOPPING CART</button></a>
+                        <a href="product_hw_p30_lite - Final.html"><button class="btn btn-lg-cont-updt" title="Update Shopping Cart">UPDATE
+                                SHOPPING CART</button></a>
                     </div>
                     <div class="col-md-4">
                         <button class="btn btn-lg-clear-shopping btnDelete" id="clear-shopping-cart" title="Clear Shopping Cart">CLEAR
@@ -231,6 +233,10 @@
 
             <script>
                 var total = 0, product1Qty = 1, product2Qty = 1, product3Qty = 1;
+                product1Qty = document.getElementById("product_hw_p30_lite_qty").value;
+                product2Qty = document.getElementById("product_hw_p35_lite_qty").value;
+                product3Qty = document.getElementById("product_hw_p40_lite_qty").value;
+                                   
                 function edit(product) {
 
                     if (product == "product_hw_p30_lite") {
@@ -246,7 +252,7 @@
 
                     }
                     else if (product == "product_hw_p35_lite") {
-                        product2Qty = document.getElementById("product_hw_p35_lite_qty").value;
+                       product2Qty = document.getElementById("product_hw_p35_lite_qty").value;
                         //  var price=document.getElementById("unit_price").value;
                         //document.getElementById("product_hw_p35_lite_qty").innerHTML = qty;
                         //total=total + (product2Qty*25599.00).toFixed(2);
@@ -283,10 +289,33 @@
             <script>
                 $(document).ready(function () {
 
-                    $("#cart-table-id").on('click', '.btnDelete', function () {
+                    $("#cart-table-id").on('click', '.btnDelete1', function () {
+                        var product1Qtyremove = document.getElementById("product_hw_p30_lite_qty").value;
+              
                         $(this).closest('tr').remove();
-                        updateTotals();
-                    
+                        updateTotals('btndlt1',product1Qtyremove);
+
+                    });
+
+                });
+                $(document).ready(function () {
+
+                    $("#cart-table-id").on('click', '.btnDelete2', function () {
+                        var product2Qtyremove = document.getElementById("product_hw_p35_lite_qty").value;
+              
+                        $(this).closest('tr').remove();
+                        updateTotals('btndlt2',product2Qtyremove);
+
+                    });
+
+                });
+                $(document).ready(function () {
+
+                    $("#cart-table-id").on('click', '.btnDelete3', function () {
+                        var product3Qtyremove = document.getElementById("product_hw_p40_lite_qty").value;
+                        $(this).closest('tr').remove();
+                        updateTotals('btndlt3',product3Qtyremove);
+
                     });
 
                 });
@@ -296,24 +325,32 @@
                     $("#clear-shopping-cart").click(function () {
                         $("#cart-table-id").remove();
                         $("#total_price_p").remove();
-                       
+
 
                     });
 
                 });
 
-            function updateTotals() {
-                var $totalGrandCell = $('#total_price');
-                if(total>0)
-                {
-                    total=total- 25599.00;
-                }
-               
-            $totalGrandCell.text(total);
-           // total = (product1Qty * 25599.00 + product2Qty * 25599.00 + product3Qty * 25599.00).toFixed(2);
-            //document.getElementById("total_price").innerHTML = ("৳") + total + (" /=");
+                function updateTotals(btn,productQtyremove) {
+                
+                    var $totalGrandCell = $('#total_price');
+                    if(btn='btndlt1' && total>0)
+                    {
+                
+                      total= total-(productQtyremove*25599.00);
+                    }
+                    else if(btn='btndlt2'&& total>0){
+                
+                        total= total-(productQtyremove*25599.00);
+                    }
+                    else if(btn='btndlt3' && total>0){
+                
+                        total= total-(productQtyremove*25599.00);
+                    }
+                   
+                    $totalGrandCell.text(total);
 
-        }
+                }
 
 
 
